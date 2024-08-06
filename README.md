@@ -34,7 +34,7 @@ This Python script allows you to play this game against the computer. The comput
 
 ```sh
 git clone https://github.com/Pintuknwr/game.git
-cd rock-paper-scissors
+cd game
 ```
 
 ## How to Play
