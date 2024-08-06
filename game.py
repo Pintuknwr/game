@@ -2,7 +2,7 @@ import random
 
 
 def get_choices():
-  player_choice = input("Enter a choice (rock, paper, scissors) : ")
+  player_choice = input("enter a choice (rock, paper, scissors) : ")
   options = ["rock", "paper", "scissors"]
   computer_choice = random.choice(options)
   dict = {"player": player_choice, "computer": computer_choice}
@@ -10,22 +10,22 @@ def get_choices():
 
 
 def check_win(player, computer):
-  print(f"You chose {player}, computer chose {computer}")
+  print(f"you chose {player}, computer chose {computer}")
   if player == computer:
-    return "It's a tie!"
+    return "it's a tie!"
   elif player == "rock":
     if computer == "scissors":
-      return "rock smashes scissors! You win!"
+      return "rock smashes scissors! you win!"
     else:
-      return "paper cover rock! You lose."
+      return "paper cover rock! you lose."
   elif player == "paper":
     if computer == "scissors":
-      return "scissors cut paper! You lose."
+      return "scissors cut paper! you lose."
     else:
-      return "paper cover rock! You win!"
+      return "paper cover rock! you win!"
   else:
     if computer == "paper":
-      return "scissors cut paper! You Win!"
+      return "scissors cut paper! you win!"
     else:
       return "rock smashes scissors! you lose."
 
